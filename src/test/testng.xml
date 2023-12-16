@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_Group">
+  <test thread-count="5" name="Test_Group">
+    <groups>
+		<run>
+			<include name="Sanity"></include>
+			<exclude name="Regression"></exclude>
+		</run>
+	</groups>
+    <classes>
+      <class name="testCases.checkOut_Page_Test"/>
+      <class name="testCases.LoginPageTest"/>
+      <class name="testCases.CheckOutPage2Test"/>
+      <class name="testCases.CheckOutPage1_Test"/>
+      <class name="testCases.VerifyMultipleCredentialsTest"/>
+      <class name="testCases.Inventory_page_2_Test"/>
+      <class name="testCases.Cart_Page_Test_3"/>
+    </classes>
+  </test> <!-- Test_Group -->
+</suite> <!-- Suite_Group -->
